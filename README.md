@@ -1,13 +1,14 @@
-# CUCU_Compiler
+# CUCU Compiler
 THE PROGRAM SHOULBE BE RUN WITH THE FOLLOWING COMMANDS:
-'''bash
-lex cucu.l
+```bash lex cucu.l
 yacc -d cucu.y
 cc lex.yy.c y.tab.c -o cucu
 ./cucu {Name of the file to be tested}
-'''
+```
 (For example: ./cucu Sample1.cu)
-  
+
+The code, when run, tokenizes the code given as input and check if the code is syntactically correct.
+
 cucu.l:
 This file generates all the tokens by parsing throught the input file and gives the tokens as output in Lexer.txt
 
